@@ -1,0 +1,326 @@
+Master Node: argon01
+Total Tasks: 2
+argon01:11350:11350 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon01:11350:11350 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^docker0,lo,virbr0
+argon01:11350:11350 [0] NCCL INFO Bootstrap : Using enp4s0:192.168.24.123<0>
+argon01:11350:11350 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+argon01:11350:11350 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+argon01:11350:11350 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+argon01:11350:11350 [0] NCCL INFO cudaDriverVersion 13020
+NCCL version 2.21.5+cuda12.4
+argon02:7729:7729 [0] NCCL INFO cudaDriverVersion 13020
+argon02:7729:7729 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon02:7729:7729 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^docker0,lo,virbr0
+argon02:7729:7729 [0] NCCL INFO Bootstrap : Using enp4s0:192.168.24.124<0>
+argon02:7729:7729 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+argon02:7729:7729 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+argon02:7729:7729 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+argon02:7729:7741 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+argon02:7729:7741 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon02:7729:7741 [0] NCCL INFO NET/Socket : Using [0]enp4s0:192.168.24.124<0> [1]veth582eec6:fe80::6c6c:77ff:feef:bd04%veth582eec6<0>
+argon02:7729:7741 [0] NCCL INFO Using non-device net plugin version 0
+argon02:7729:7741 [0] NCCL INFO Using network Socket
+argon02:7729:7741 [0] NCCL INFO ncclCommInitRank comm 0x565e2981e130 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0xb106c940f8c7d7b8 - Init START
+argon02:7729:7741 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp4s0'
+argon02:7729:7741 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 1 'veth582eec6'
+argon02:7729:7741 [0] NCCL INFO comm 0x565e2981e130 rank 1 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+argon02:7729:7741 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+argon02:7729:7741 [0] NCCL INFO P2P Chunksize set to 131072
+argon02:7729:7744 [0] NCCL INFO New proxy recv connection 0 from local rank 0, transport 2
+argon02:7729:7741 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x77a3900065c0
+argon02:7729:7741 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/Socket/1
+argon02:7729:7744 [0] NCCL INFO New proxy recv connection 1 from local rank 0, transport 2
+argon02:7729:7741 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x77a390006638
+argon02:7729:7741 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/Socket/1
+argon02:7729:7744 [0] NCCL INFO New proxy send connection 2 from local rank 0, transport 2
+argon02:7729:7741 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x77a3900066b0
+argon02:7729:7741 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/Socket/1
+argon02:7729:7744 [0] NCCL INFO New proxy send connection 3 from local rank 0, transport 2
+argon02:7729:7741 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x77a390006728
+argon02:7729:7741 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/Socket/1
+
+argon02:7729:7744 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::e039:fdff:fe86:8400%veth582eec6<34315> failed : Software caused connection abort
+argon02:7729:7744 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon02:7729:7744 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon02:7729:7744 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon02:7729:7744 [0] NCCL INFO transport/net.cc:687 -> 2
+
+argon02:7729:7744 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::e039:fdff:fe86:8400%veth582eec6<45893> failed : Software caused connection abort
+argon02:7729:7744 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon02:7729:7744 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon02:7729:7744 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon02:7729:7744 [0] NCCL INFO transport/net.cc:687 -> 2
+argon02:7729:7741 [0] NCCL INFO transport/net.cc:306 -> 2
+argon02:7729:7741 [0] NCCL INFO transport.cc:165 -> 2
+argon02:7729:7741 [0] NCCL INFO init.cc:1263 -> 2
+argon02:7729:7741 [0] NCCL INFO init.cc:1548 -> 2
+argon02:7729:7741 [0] NCCL INFO group.cc:64 -> 2 [Async thread]
+
+argon02:7729:7744 [0] proxy.cc:1546 NCCL WARN [Service thread] Error encountered progressing operation=Connect, res=3, closing connection
+
+argon02:7729:7744 [0] proxy.cc:1580 NCCL WARN [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank1]:     run_scaling_benchmark(args)
+[rank1]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank1]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank1]: Last error:
+[rank1]: [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+argon02:7729:7729 [0] NCCL INFO group.cc:418 -> 2
+argon02:7729:7729 [0] NCCL INFO init.cc:1929 -> 2
+[rank1]:[W817 12:52:25.724498102 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank0]:     run_scaling_benchmark(args)
+[rank0]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank0]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank0]: Last error:
+[rank0]: [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+argon01:11350:11363 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+argon01:11350:11363 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon01:11350:11363 [0] NCCL INFO NET/Socket : Using [0]enp4s0:192.168.24.123<0> [1]veth6387c70:fe80::e039:fdff:fe86:8400%veth6387c70<0>
+argon01:11350:11363 [0] NCCL INFO Using non-device net plugin version 0
+argon01:11350:11363 [0] NCCL INFO Using network Socket
+argon01:11350:11363 [0] NCCL INFO ncclCommInitRank comm 0x5c9d1fdcaf00 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0xb106c940f8c7d7b8 - Init START
+argon01:11350:11363 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp4s0'
+argon01:11350:11363 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 1 'veth6387c70'
+argon01:11350:11363 [0] NCCL INFO comm 0x5c9d1fdcaf00 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+argon01:11350:11363 [0] NCCL INFO Channel 00/02 :    0   1
+argon01:11350:11363 [0] NCCL INFO Channel 01/02 :    0   1
+argon01:11350:11363 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+argon01:11350:11363 [0] NCCL INFO P2P Chunksize set to 131072
+argon01:11350:11364 [0] NCCL INFO New proxy recv connection 0 from local rank 0, transport 2
+argon01:11350:11363 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x736a440065d0
+argon01:11350:11363 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/Socket/1
+argon01:11350:11364 [0] NCCL INFO New proxy recv connection 1 from local rank 0, transport 2
+argon01:11350:11363 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x736a44006648
+argon01:11350:11363 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/1
+argon01:11350:11364 [0] NCCL INFO New proxy send connection 2 from local rank 0, transport 2
+argon01:11350:11363 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x736a440066c0
+argon01:11350:11363 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/1
+argon01:11350:11364 [0] NCCL INFO New proxy send connection 3 from local rank 0, transport 2
+argon01:11350:11363 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x736a44006738
+argon01:11350:11363 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/1
+
+argon01:11350:11364 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::6c6c:77ff:feef:bd04%veth6387c70<52341> failed : Software caused connection abort
+argon01:11350:11364 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon01:11350:11364 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon01:11350:11364 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon01:11350:11364 [0] NCCL INFO transport/net.cc:687 -> 2
+
+argon01:11350:11364 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::6c6c:77ff:feef:bd04%veth6387c70<54077> failed : Software caused connection abort
+argon01:11350:11364 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon01:11350:11364 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon01:11350:11364 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon01:11350:11364 [0] NCCL INFO transport/net.cc:687 -> 2
+argon01:11350:11363 [0] NCCL INFO transport/net.cc:306 -> 2
+argon01:11350:11363 [0] NCCL INFO transport.cc:165 -> 2
+argon01:11350:11363 [0] NCCL INFO init.cc:1263 -> 2
+argon01:11350:11363 [0] NCCL INFO init.cc:1548 -> 2
+argon01:11350:11363 [0] NCCL INFO group.cc:64 -> 2 [Async thread]
+
+argon01:11350:11364 [0] proxy.cc:1546 NCCL WARN [Service thread] Error encountered progressing operation=Connect, res=3, closing connection
+
+argon01:11350:11364 [0] proxy.cc:1580 NCCL WARN [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+argon01:11350:11350 [0] NCCL INFO group.cc:418 -> 2
+argon01:11350:11350 [0] NCCL INFO init.cc:1929 -> 2
+[rank0]:[W817 12:52:25.822464964 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+srun: error: argon02: task 1: Exited with exit code 1
+srun: error: argon01: task 0: Exited with exit code 1
+argon01:11392:11392 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon01:11392:11392 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^docker0,lo,virbr0
+argon01:11392:11392 [0] NCCL INFO Bootstrap : Using enp4s0:192.168.24.123<0>
+argon01:11392:11392 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+argon01:11392:11392 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+argon01:11392:11392 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+argon01:11392:11392 [0] NCCL INFO cudaDriverVersion 13020
+NCCL version 2.21.5+cuda12.4
+argon02:7764:7764 [0] NCCL INFO cudaDriverVersion 13020
+argon02:7764:7764 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon02:7764:7764 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^docker0,lo,virbr0
+argon02:7764:7764 [0] NCCL INFO Bootstrap : Using enp4s0:192.168.24.124<0>
+argon02:7764:7764 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+argon02:7764:7764 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+argon02:7764:7764 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+argon02:7764:7790 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+argon02:7764:7790 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon02:7764:7790 [0] NCCL INFO NET/Socket : Using [0]enp4s0:192.168.24.124<0> [1]veth582eec6:fe80::6c6c:77ff:feef:bd04%veth582eec6<0>
+argon02:7764:7790 [0] NCCL INFO Using non-device net plugin version 0
+argon02:7764:7790 [0] NCCL INFO Using network Socket
+argon02:7764:7790 [0] NCCL INFO ncclCommInitRank comm 0x65217cb2b580 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0xc34f33c8f8f1bf06 - Init START
+argon02:7764:7790 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp4s0'
+argon02:7764:7790 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 1 'veth582eec6'
+argon02:7764:7790 [0] NCCL INFO comm 0x65217cb2b580 rank 1 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+argon02:7764:7790 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+argon02:7764:7790 [0] NCCL INFO P2P Chunksize set to 131072
+argon02:7764:7791 [0] NCCL INFO New proxy recv connection 0 from local rank 0, transport 2
+argon02:7764:7790 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x78cc5c0065c0
+argon02:7764:7790 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/Socket/1
+argon02:7764:7791 [0] NCCL INFO New proxy recv connection 1 from local rank 0, transport 2
+argon02:7764:7790 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x78cc5c006638
+argon02:7764:7790 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/Socket/1
+argon02:7764:7791 [0] NCCL INFO New proxy send connection 2 from local rank 0, transport 2
+argon02:7764:7790 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x78cc5c0066b0
+argon02:7764:7790 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/Socket/1
+argon02:7764:7791 [0] NCCL INFO New proxy send connection 3 from local rank 0, transport 2
+argon02:7764:7790 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x78cc5c006728
+argon02:7764:7790 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/Socket/1
+
+argon02:7764:7791 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::e039:fdff:fe86:8400%veth582eec6<43717> failed : Software caused connection abort
+argon02:7764:7791 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon02:7764:7791 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon02:7764:7791 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon02:7764:7791 [0] NCCL INFO transport/net.cc:687 -> 2
+argon02:7764:7790 [0] NCCL INFO transport/net.cc:306 -> 2
+argon02:7764:7790 [0] NCCL INFO transport.cc:165 -> 2
+
+argon02:7764:7791 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::e039:fdff:fe86:8400%veth582eec6<41881> failed : Software caused connection abort
+argon02:7764:7791 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon02:7764:7791 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon02:7764:7791 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon02:7764:7791 [0] NCCL INFO transport/net.cc:687 -> 2
+argon02:7764:7790 [0] NCCL INFO init.cc:1263 -> 2
+argon02:7764:7790 [0] NCCL INFO init.cc:1548 -> 2
+argon02:7764:7790 [0] NCCL INFO group.cc:64 -> 2 [Async thread]
+
+argon02:7764:7791 [0] proxy.cc:1546 NCCL WARN [Service thread] Error encountered progressing operation=Connect, res=3, closing connection
+
+argon02:7764:7791 [0] proxy.cc:1580 NCCL WARN [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank1]:     run_scaling_benchmark(args)
+[rank1]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank1]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank1]: Last error:
+[rank1]: [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+argon02:7764:7764 [0] NCCL INFO group.cc:418 -> 2
+argon02:7764:7764 [0] NCCL INFO init.cc:1929 -> 2
+[rank1]:[W817 12:54:44.982844885 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank0]:     run_scaling_benchmark(args)
+[rank0]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank0]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank0]: Last error:
+[rank0]: [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+argon01:11392:11420 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+argon01:11392:11420 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon01:11392:11420 [0] NCCL INFO NET/Socket : Using [0]enp4s0:192.168.24.123<0> [1]veth6387c70:fe80::e039:fdff:fe86:8400%veth6387c70<0>
+argon01:11392:11420 [0] NCCL INFO Using non-device net plugin version 0
+argon01:11392:11420 [0] NCCL INFO Using network Socket
+argon01:11392:11420 [0] NCCL INFO ncclCommInitRank comm 0x5d2507cdee40 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0xc34f33c8f8f1bf06 - Init START
+argon01:11392:11420 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'enp4s0'
+argon01:11392:11420 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 1 'veth6387c70'
+argon01:11392:11420 [0] NCCL INFO comm 0x5d2507cdee40 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+argon01:11392:11420 [0] NCCL INFO Channel 00/02 :    0   1
+argon01:11392:11420 [0] NCCL INFO Channel 01/02 :    0   1
+argon01:11392:11420 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+argon01:11392:11420 [0] NCCL INFO P2P Chunksize set to 131072
+argon01:11392:11421 [0] NCCL INFO New proxy recv connection 0 from local rank 0, transport 2
+argon01:11392:11420 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x71e91c0065d0
+argon01:11392:11420 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/Socket/1
+argon01:11392:11421 [0] NCCL INFO New proxy recv connection 1 from local rank 0, transport 2
+argon01:11392:11420 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x71e91c006648
+argon01:11392:11420 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/1
+argon01:11392:11421 [0] NCCL INFO New proxy send connection 2 from local rank 0, transport 2
+argon01:11392:11420 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x71e91c0066c0
+argon01:11392:11420 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/1
+argon01:11392:11421 [0] NCCL INFO New proxy send connection 3 from local rank 0, transport 2
+argon01:11392:11420 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x71e91c006738
+argon01:11392:11420 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/1
+
+argon01:11392:11421 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::6c6c:77ff:feef:bd04%veth6387c70<39465> failed : Software caused connection abort
+argon01:11392:11421 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon01:11392:11421 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon01:11392:11421 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon01:11392:11421 [0] NCCL INFO transport/net.cc:687 -> 2
+argon01:11392:11420 [0] NCCL INFO transport/net.cc:306 -> 2
+argon01:11392:11420 [0] NCCL INFO transport.cc:165 -> 2
+
+argon01:11392:11421 [0] misc/socket.cc:484 NCCL WARN socketStartConnect: Connect to fe80::6c6c:77ff:feef:bd04%veth6387c70<48623> failed : Software caused connection abort
+argon01:11392:11421 [0] NCCL INFO misc/socket.cc:567 -> 2
+argon01:11392:11421 [0] NCCL INFO misc/socket.cc:589 -> 2
+argon01:11392:11421 [0] NCCL INFO transport/net_socket.cc:339 -> 2
+argon01:11392:11421 [0] NCCL INFO transport/net.cc:687 -> 2
+argon01:11392:11420 [0] NCCL INFO init.cc:1263 -> 2
+argon01:11392:11420 [0] NCCL INFO init.cc:1548 -> 2
+argon01:11392:11420 [0] NCCL INFO group.cc:64 -> 2 [Async thread]
+
+argon01:11392:11421 [0] proxy.cc:1546 NCCL WARN [Service thread] Error encountered progressing operation=Connect, res=3, closing connection
+
+argon01:11392:11421 [0] proxy.cc:1580 NCCL WARN [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+argon01:11392:11392 [0] NCCL INFO group.cc:418 -> 2
+argon01:11392:11392 [0] NCCL INFO init.cc:1929 -> 2
+[rank0]:[W817 12:54:45.086477379 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+srun: error: argon02: task 1: Exited with exit code 1
+srun: error: argon01: task 0: Exited with exit code 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26912.57it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27161.29it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+argon01:11446:11446 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker0,lo,virbr0
+argon01:11446:11446 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^docker0,lo,virbr0
+argon01:11446:11446 [0] NCCL INFO Bootstrap : Using enp4s0:192.168.24.123<0>
+argon01:11446:11446 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+argon01:11446:11446 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+argon01:11446:11446 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+argon01:11446:11446 [0] NCCL INFO cudaDriverVersion 13020
+NCCL version 2.21.5+cuda12.4
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-08-17T12:55:33.351] error: *** JOB 770 ON argon01 CANCELLED AT 2026-08-17T12:55:33 DUE to SIGNAL Terminated ***
+[2026-08-17T12:55:33.351] error: *** STEP 770.2 ON argon01 CANCELLED AT 2026-08-17T12:55:33 DUE to SIGNAL Terminated ***

@@ -1,0 +1,76 @@
+==================================================
+PHASE 1: Benchmarking on DRBD-backed /data
+==================================================
+[*] Generating 5000 uncompressed high-res payloads in /data/testuser/dl_bench_data...
+
+[DRBD-backed /data] resnet50 Results:
+  T_epoch: 14.62 s | delta_I/O: 0.94 % | Throughput: 341.5 smp/s
+SUMMARY_ROW: DRBD-backed /data | resnet50 | 14.62 | 0.94 | 341.5
+
+
+[DRBD-backed /data] vit_b_16 Results:
+  T_epoch: 61.53 s | delta_I/O: 0.14 % | Throughput: 81.1 smp/s
+SUMMARY_ROW: DRBD-backed /data | vit_b_16 | 61.53 | 0.14 | 81.1
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27004.87it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[*] Generating 5000 text files in /data/testuser/dl_bench_data/txt_shards...
+
+[DRBD-backed /data] bert_base Results:
+  T_epoch: 65.91 s | delta_I/O: 0.10 % | Throughput: 75.7 smp/s
+SUMMARY_ROW: DRBD-backed /data | bert_base | 65.91 | 0.10 | 75.7
+
+==================================================
+Staging Data from /data to Local NVMe Scratch...
+==================================================
+==================================================
+PHASE 2: Benchmarking on Atlas Local Scratch
+==================================================
+
+[Atlas Local Scratch] resnet50 Results:
+  T_epoch: 7.16 s | delta_I/O: 1.59 % | Throughput: 697.0 smp/s
+SUMMARY_ROW: Atlas Local Scratch | resnet50 | 7.16 | 1.59 | 697.0
+
+
+[Atlas Local Scratch] vit_b_16 Results:
+  T_epoch: 20.08 s | delta_I/O: 0.44 % | Throughput: 248.6 smp/s
+SUMMARY_ROW: Atlas Local Scratch | vit_b_16 | 20.08 | 0.44 | 248.6
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26050.76it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+[Atlas Local Scratch] bert_base Results:
+  T_epoch: 12.73 s | delta_I/O: 0.37 % | Throughput: 392.2 smp/s
+SUMMARY_ROW: Atlas Local Scratch | bert_base | 12.73 | 0.37 | 392.2
+

@@ -1,0 +1,101 @@
+Master Node: argon01
+Total Tasks: 2
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank1]:     run_scaling_benchmark(args)
+[rank1]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank1]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank1]: Last error:
+[rank1]: [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+[rank1]:[W817 12:45:27.950377127 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank0]:     run_scaling_benchmark(args)
+[rank0]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank0]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank0]: Last error:
+[rank0]: [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+[rank0]:[W817 12:45:28.111808116 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+srun: error: argon02: task 1: Exited with exit code 1
+srun: error: argon01: task 0: Exited with exit code 1
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank1]:     run_scaling_benchmark(args)
+[rank1]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank1]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank1]: Last error:
+[rank1]: [Proxy Service 1] Failed to execute operation Connect from rank 1, retcode 3
+[rank1]:[W817 12:47:47.198419626 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/testuser/bench/model/test.py", line 132, in <module>
+[rank0]:     run_scaling_benchmark(args)
+[rank0]:   File "/home/testuser/bench/model/test.py", line 68, in run_scaling_benchmark
+[rank0]:     model = DDP(model, device_ids=[local_rank] if torch.cuda.is_available() else None)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 825, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/opt/atlas/conda/envs/pt_310/lib/python3.10/site-packages/torch/distributed/utils.py", line 288, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1729647382455/work/torch/csrc/distributed/c10d/NCCLUtils.hpp:317, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.21.5
+[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+[rank0]: Last error:
+[rank0]: [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
+[rank0]:[W817 12:47:47.297677984 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+srun: error: argon02: task 1: Exited with exit code 1
+srun: error: argon01: task 0: Exited with exit code 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27486.88it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 99/199 [00:00<00:00, 912.61it/s]Loading weights:  96%|█████████▌| 191/199 [00:00<00:00, 912.31it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 932.53it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-08-17T12:49:03.722] error: *** STEP 767.2 ON argon01 CANCELLED AT 2026-08-17T12:49:03 DUE to SIGNAL Terminated ***
+[2026-08-17T12:49:03.723] error: *** JOB 767 ON argon01 CANCELLED AT 2026-08-17T12:49:03 DUE to SIGNAL Terminated ***

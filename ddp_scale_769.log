@@ -1,0 +1,14 @@
+Master Node: argon01
+Total Tasks: 2
+srun: error: argon01: task 0: Exited with exit code 13
+[2026-08-17T12:49:11.258] error: execve(): test.py: Permission denied
+[2026-08-17T12:49:11.270] error: execve(): test.py: Permission denied
+srun: error: argon02: task 1: Exited with exit code 13
+srun: error: argon01: task 0: Exited with exit code 13
+[2026-08-17T12:49:11.335] error: execve(): test.py: Permission denied
+[2026-08-17T12:49:11.337] error: execve(): test.py: Permission denied
+srun: error: argon02: task 1: Exited with exit code 13
+srun: error: argon01: task 0: Exited with exit code 13
+[2026-08-17T12:49:11.398] error: execve(): test.py: Permission denied
+[2026-08-17T12:49:11.403] error: execve(): test.py: Permission denied
+srun: error: argon02: task 1: Exited with exit code 13

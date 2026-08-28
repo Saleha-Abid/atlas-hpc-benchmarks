@@ -1,0 +1,9 @@
+==================================================
+PHASE 1: Benchmarking on DRBD-backed /data
+==================================================
+
+[DRBD-backed /data] resnet50 Results:
+  T_epoch: 25.82 s | delta_I/O: 0.75 % | Throughput: 193.4 smp/s
+SUMMARY_ROW: DRBD-backed /data | resnet50 | 25.82 | 0.75 | 193.4
+
+[2026-08-28T23:12:45.953] error: *** JOB 809 ON chaos02 CANCELLED AT 2026-08-28T23:12:45 DUE to SIGNAL Terminated ***

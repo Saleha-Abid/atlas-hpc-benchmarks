@@ -1,0 +1,9 @@
+==================================================
+PHASE 1: Benchmarking on DRBD-backed /data
+==================================================
+
+[DRBD-backed /data] resnet50 Results:
+  T_epoch: 26.14 s | delta_I/O: 0.74 % | Throughput: 191.0 smp/s
+SUMMARY_ROW: DRBD-backed /data | resnet50 | 26.14 | 0.74 | 191.0
+
+[2026-08-28T23:01:54.040] error: *** JOB 807 ON reaper01 CANCELLED AT 2026-08-28T23:01:54 DUE to SIGNAL Terminated ***

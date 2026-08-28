@@ -1,0 +1,15 @@
+==================================================
+PHASE 1: Benchmarking on DRBD-backed /data
+==================================================
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
+==================================================
+Staging Data from /data to Local NVMe Scratch...
+==================================================
+==================================================
+PHASE 2: Benchmarking on Atlas Local Scratch
+==================================================
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
+python3: can't open file '/home/testuser/bench/model/dl_bench_disk.py': [Errno 2] No such file or directory
