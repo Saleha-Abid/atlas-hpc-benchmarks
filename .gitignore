@@ -1,2 +1,4 @@
 *.log
 *.png
+chart.py
+chart.sh
