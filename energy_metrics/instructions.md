@@ -1,4 +1,4 @@
-# # Instructions to Collect Energy and Power Metrics
+# Instructions to Collect Energy and Power Metrics
 
 This guide provides instructions to sample, log, and plot cluster node electrical power dissipation ($P_{\text{total}} = P_{\text{CPU}} + P_{\text{GPU}}$) across active workload execution and baseline idle states.
 
