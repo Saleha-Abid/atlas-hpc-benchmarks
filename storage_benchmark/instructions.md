@@ -1,4 +1,4 @@
-### Instructions to Collect Storage Benchmark Results
+# Instructions to Collect Storage Benchmark Results
 
 ## Step 1
 Run storage.sh on Atlas HPC
